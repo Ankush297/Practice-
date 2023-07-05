@@ -1,152 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-   .modal-header {
-  padding: 0;
-}
-.modal-header .close {
-  padding: 10px 15px;
-}
-.modal-header ul {
-  border: none;
-}
-.modal-header ul li {
-  margin: 0;
-}
-.modal-header ul li a {
-  border: none;
-  border-radius: 0;
-}
-.modal-header ul li.active a {
-  color: #e12f27;
-}
-.modal-header ul li a:hover {
-  border: none;
-}
-.modal-header ul li a span {
-  margin-left: 10px;
-}
-.modal-body .form-group {
-  margin-bottom: 10px;
-}
-  
-  </style>
+ 
 </head>
+
+<link rel="Icon" type="image/x-icon" href="logo.jpg">
+    <title>Real Education</title>
+  <link rel="stylesheet" href="sub1.css">
 <body>
-    
-    <div >
-        <span id="plus" class="plus" class="glyphicon glyphicon-plus-sign" style="font-size:35px;cursor:pointer;float:right" onclick="openNav()"></span>
-       </div>
-    
-    
-
-    <nav style="background-color: black;" class="navbar navbar-inverse">
+    <a href="index.html" style="text-decoration:none"> <img src="redu.png" class="first" > </a>
+     
+<nav class="navbar navbar-inverse">
   
-        <div style="border: 5px solid white;" class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>                        
-          </button>
-          <a class="navbar-brand" href="index.html">Real Eduacation</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          
-         <ul class="nav navbar-nav navbar-right">
-           
-            <li>
-                <div class="container">
-                    <div class="row">
-                        
-                                        <!-- Signin & Signup -->
-                                        <a class="btn btn-primary" href="#" data-toggle="modal" data-target=".login-register-form">
-                                           Login - Registration Modal  </a>
-                
+    <div style="border: 5px solid white;" class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Real Eduacation</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      
+     <ul class="nav navbar-nav navbar-right">
+        
+        <li>
+          <div class="container">
+            <div class="row">
+             <div class="sub1"> <a style="font-size:18px;" href="sub1.html">Back</a><br><br></div>
+                                <!-- Signin & Signup -->
+                                <a class="btn btn-primary" href="#" data-toggle="modal" data-target=".login-register-form">
+                                   Login - Registration </a>
+        
 <!-- Login / Register Modal-->
-                                        <div class="modal fade login-register-form" role="dialog">
-                                            <div class="modal-dialog modal-sm">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal">
-                                                            <span class="glyphicon glyphicon-remove"></span>
-                                                        </button>
-                                                        <ul class="nav nav-tabs">
-                                                            <li class="active"><a data-toggle="tab" href="#login-form"> Login <span class="glyphicon glyphicon-user"></span></a></li>
-                                                            <li><a data-toggle="tab" href="#registration-form"> Register <span class="glyphicon glyphicon-pencil"></span></a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <div class="tab-content">
-                                                            <div id="login-form" class="tab-pane fade in active">
-                                                                <form action="/" autocomplete="on">
-                                                                    <div class="form-group">
-                                                                        <label for="email">Email:</label>
-                                                                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email"  size="50" required autofocus>
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <label for="pwd">Password:</label>
-                                                                        
-                                                                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}"  size="30" required autofocus>
-                                                                    </div>
-                                                                    <div class="checkbox">
-                                                                        <label><input type="checkbox" name="remember" required> Remember me</label>
-                                                                    </div>
-                                                                    <button type="submit" class="btn btn-default">Login</button>
-                                                                </form>
-                                                            </div>
-                                                            <div id="registration-form" class="tab-pane fade">
-                                                                <form action="/" autocomplete="on">
-                                                                    <div class="form-group">
-                                                                        <label for="name">Your Name:</label>
-                                                                        <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" size="20" required autofocus>
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <label for="newemail">Email:</label>
-                                                                        <input type="email" class="form-control" id="newemail" placeholder="Enter new email" name="newemail" size="50" required autofocus>
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <label for="newpwd">Password:</label>
-                                                                        <p id="psw" style="opacity: 0.5; display:none;">Must contain at least one number and one uppercase and lowercase letter, and at least 5 or more numbers</p>
-                                                                        <input type="password" class="form-control" id="newpwd" placeholder="New password" name="newpwd" size="30" onclick="psw()" required autofocus>
-                                                               </div>
-                                                                    <button type="submit" class="btn btn-default">Register</button>
-                                                                </form>
-                                                            </div>
-                
-                                                        </div>
-                                                    </div>
-                <!--                                    <div class="modal-footer">-->
-                <!--                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
-                <!--                                    </div>-->
-                                                </div>
-                                            </div>
+  <div class="modal fade login-register-form" role="dialog">
+ <div class="modal-dialog modal-sm">
+ <div class="modal-content">
+  <div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal">
+   <span class="glyphicon glyphicon-remove"></span>
+ </button>
+   <ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#login-form"> Login <span class="glyphicon glyphicon-user"></span></a></li>
+  <li><a data-toggle="tab" href="#registration-form"> Register <span class="glyphicon glyphicon-pencil"></span></a></li>
+  </ul>
+    </div>
+   <div class="modal-body">
+ <div class="tab-content">
+ <div id="login-form" class="tab-pane fade in active">
+ <form action="login.php" autocomplete="on" method="post">
+ <div class="form-group">
+ <label for="email">Email:</label>
+  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email"  size="50" required autofocus>
+ </div>
+ <div class="form-group">
+  <label for="pwd">Password:</label>
+                                                                
+ <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}"  size="30" required autofocus>
+ </div>
+<div class="checkbox">
+ <label><input type="checkbox" name="remember" required> Remember me</label>
+ </div>
+  <button type="submit" class="btn btn-default">Login</button>
+ </form>
+ </div>
+ 
+ <div id="registration-form" class="tab-pane fade">
+ <form action="login.php" autocomplete="on" method="post">
+   <div class="form-group">
+  <label for="name">Your Name:</label>
+    <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" size="20" required autofocus>
+ </div>
+   <div class="form-group">
+   <label for="newemail">Email:</label>
+   <input type="email" class="form-control" id="newemail" placeholder="Enter new email" name="newemail" size="50" required autofocus>
+  </div>
+  <div class="form-group">
+  <label for="newpwd">Password:</label>
+  <p id="psw" style="opacity: 0.5; display:none;">Must contain at least one number and one uppercase and lowercase letter, and at least 5 or more numbers</p>
+  <input type="password" class="form-control" id="newpwd" placeholder="New password" name="newpwd" size="30" onclick="psw()" required autofocus>
+   </div>
+   <button type="submit" class="btn btn-default">Register</button>
+   </form>
+  </div>
+ </div>
+   </div>
+        <!--                                    <div class="modal-footer">-->
+        <!--                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+        <!--                                    </div>-->
                                         </div>
-                    </div>
-                </div></li>
-          </ul>
-        </div>
-    
-    </nav>
+                                    </div>
+                                </div>
+            </div>
+        </div></li>
+      </ul>
+    </div>
 
+</nav>
+<strong style="margin-left:26%; font-size:26px">Unlimited-Practice-Series</strong>
   
- 
-<script>
-$(document).ready(function(){
-  $("#myBtn").click(function(){
-    $("#myModal").modal();
-  });
-});
- 
- function psw(){
-    var psw = document.getElementById("psw");
-    psw.style.display = "block";
- }
-</script>
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="reasoning.html" >Reasoning</a> <br><br>
+    <a href="GK.html" >GK</a><br><br>
+    <a href="english.html">English</a><br><br>
+    <a href="AimagePro.html">Image-Processing</a><br><br>
+    <a href="sub1.html">Back</a><br><br>
+   
+
+</div>
+
+
+
+<div style="border: 5px solid rgb(53, 14, 108);" class="cont">
+<img style="height: 400px;" class="Redu" src="practice.png" alt="products">
+     
+    <div class="top-left"> Web Under Development...</div>
+    </div>
+
+<div id="main"><div><p id="plus"><span class="glyphicon glyphicon-plus-sign" onclick="openNav()"></span></p></div>
+<p>cccc</p>
+</div>
+<div class="footer">
+
+
+    <div class="topnav">
+      <a href="#">Author</a>
+      <a href="#">Connect</a>
+      <a href="#">Location</a>
+      <a href="#" style="float:right">Suggest</a>
+    </div>
+    </div>
+<script defer src="script.js"></script>
+
 
 </body>
 </html>
