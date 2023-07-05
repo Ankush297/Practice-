@@ -33,11 +33,11 @@
         <li>
           <div class="container">
             <div class="row">
-             <div class="sub1"> <a style="font-size:18px;" href="sub1.html">Back</a><br><br></div>
+              <div class="sub1"> <a href="sub1.html">Back</a><br><br></div>
                                 <!-- Signin & Signup -->
                                 <a class="btn btn-primary" href="#" data-toggle="modal" data-target=".login-register-form">
-                                   Login - Registration </a>
-        
+                                   Login - Registration Modal  </a>
+
 <!-- Login / Register Modal-->
   <div class="modal fade login-register-form" role="dialog">
  <div class="modal-dialog modal-sm">
@@ -61,7 +61,7 @@
  </div>
  <div class="form-group">
   <label for="pwd">Password:</label>
-                                                                
+
  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}"  size="30" required autofocus>
  </div>
 <div class="checkbox">
@@ -70,7 +70,7 @@
   <button type="submit" class="btn btn-default">Login</button>
  </form>
  </div>
- 
+
  <div id="registration-form" class="tab-pane fade">
  <form action="login.php" autocomplete="on" method="post">
    <div class="form-group">
@@ -103,31 +103,61 @@
     </div>
 
 </nav>
-<strong style="margin-left:35px; font-size:26px">Unlimited-Practice-Series</strong>
-  
+<strong style="margin-left:26%; font-size:26px">AFCAT-PYQ-SERIES</strong>
+
 
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="reasoning.html" >Reasoning</a> <br><br>
-    <a href="GK.html" >GK</a><br><br>
-    <a href="english.html">English</a><br><br>
-    <a href="AimagePro.html">Image-Processing</a><br><br>
+    <a href="2023-1.html" >2023-1</a> <br><br>
+    <a href="2022-2.html" >2022-2</a><br><br>
+    <a href="2022-1.html">2022-1</a><br><br>
+    <a href="2021-2.html">2021-2</a><br><br>
+    <a href="2021-1.html" >2021-1</a> <br><br>
+    <a href="2020-2.html" >2020-2</a><br><br>
+    <a href="2020-1.html">2020-1</a><br><br>
+    <a href="2019-2.html">2019-2</a><br><br>
+    <a href="2019-1.html" >2019-1</a> <br><br>
+    <a href="2018-2.html" >2018-2</a><br><br>
+    <a href="2018-1.html">2018-1</a><br><br>
+    <a href="2017-2.html">2017-2</a><br><br>
     <a href="sub1.html">Back</a><br><br>
-   
-
 </div>
 
 
 
 <div style="border: 5px solid rgb(53, 14, 108);" class="cont">
-<img style="height: 400px;" class="Redu" src="practice.png" alt="products">
-     
+<img class="Redu" src="AFCAT-2023.webp" alt="products">
+
     <div class="top-left"> Web Under Development...</div>
     </div>
 
 <div id="main"><div><p id="plus"><span class="glyphicon glyphicon-plus-sign" onclick="openNav()"></span></p></div>
-<p>cccc</p>
+<pre style="height: auto; font-size:12px">Instructions for candidates
+  1. Total No. of Questions-100. Each Question is of three marks.
+  2. One mark will be deducted for every wrong answer.
+  3. Do not write or mark on the Question Paper.
+  4. Question Paper to be returned before leaving the Exam Hall.
+  TIME ALLOTTED - 2 HRS.</pre>
+  <pre>1. When was Indian National Congress founded?
+    (a) 18 December, 1885
+    (b)28, December, 1885
+    (c) 11, September, 1901
+    (d) 11, September, 1903</pre>
+    <button id="sol" style=" margin-left:10px;" onclick="myFunction()"> Solu.</button>
+
+
+<div  ><pre id="1">1. Total No. of Questions-100. Each Question is of three marks.
+  2. One mark will be deducted for every wrong answer.
+  3. Do not write or mark on the Question Paper.
+  4. Question Paper to be returned before leaving the Exam Hall.
+  TIME ALLOTTED - 2 HRS.
+  1. When was Indian National Congress founded?
+  (a) 18 December, 1885
+  (b)28, December, 1885
+  (c) 11, September, 1901
+  (d) 11, September, 1903</pre></div>
+
 </div>
 <div class="footer">
 
@@ -141,6 +171,23 @@
     </div>
 <script defer src="script.js"></script>
 
+<script>
 
+
+   /* var sol = document.getElementById("sol").style.display = "hide";
+   var sol = document.getElementById("sol").style.display = "none";
+   var solu = document.getElementById("solu").innerHTML = "lhsdd dhasdhajd ashdkhdashd silsdhasaj <br> hasdkjabdjasd asnhsjdbsjdbasjd nasdalsdakjlsd hskhasjha asjklahslahsh "; */
+   function myFunction() {
+  var x = document.getElementById("1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
+
+</script>
 </body>
 </html>
