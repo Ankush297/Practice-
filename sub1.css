@@ -12,7 +12,7 @@
           .first {
     width:150px;
     height:60px;
-    margin-left:50%;
+    margin-left:35%;
    margin-top:0%;
   background-color:#ddd;
   padding:2px;
@@ -254,6 +254,6 @@ margin-left:1%;
    /* content of main */
    .col-xs-12{
     border: 01px ridge rgb(161, 160, 160);
-    background-color: white;
+    background-color: rgba(255, 255,255, 1);
       font-size:15px;
    }
