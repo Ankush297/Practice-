@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Real Education</title>
+  
+<link rel="Icon" type="image/x-icon" href="logo.jpg">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="script.js"></script>
-  <script src="mainpage.js"></script>
-
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="mainpage.js"></script>
+  <link rel="stylesheet" href="sub1.css">
 </head>
 
 <link rel="Icon" type="image/x-icon" href="logo.jpg">
@@ -17,96 +18,34 @@
   <link rel="stylesheet" href="sub1.css">
 <body>
     <a href="index.html" style="text-decoration:none"> <img src="redu.png" class="first" > </a>
-
-<nav class="navbar navbar-inverse">
-
-    <div style="border: 5px solid white;" class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Real Eduacation</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-
+    <nav style="border: 5px solid white;" class="navbar navbar-expand-xs bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a style="border:1px solid white;padding: 1px;background-color: brown;"  class="navbar-brand" href="index.html">Real Education</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      
      <ul class="nav navbar-nav navbar-right">
-
-        <li>
-          <div class="container">
-            <div class="row">
-              <div class="sub1"> <a href="sub1.html">Back</a><br><br></div>
-                                <!-- Signin & Signup -->
-                                <a class="btn btn-primary" href="#" data-toggle="modal" data-target=".login-register-form">
-                                   Login - Registration Modal  </a>
-
-<!-- Login / Register Modal-->
-  <div class="modal fade login-register-form" role="dialog">
- <div class="modal-dialog modal-sm">
- <div class="modal-content">
-  <div class="modal-header">
-  <button type="button" class="close" data-dismiss="modal">
-   <span class="glyphicon glyphicon-remove"></span>
- </button>
-   <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" href="#login-form"> Login <span class="glyphicon glyphicon-user"></span></a></li>
-  <li><a data-toggle="tab" href="#registration-form"> Register <span class="glyphicon glyphicon-pencil"></span></a></li>
-  </ul>
-    </div>
-   <div class="modal-body">
- <div class="tab-content">
- <div id="login-form" class="tab-pane fade in active">
- <form action="login.php" autocomplete="on" method="post">
- <div class="form-group">
- <label for="email">Email:</label>
-  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email"  size="50" required autofocus>
- </div>
- <div class="form-group">
-  <label for="pwd">Password:</label>
-
- <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}"  size="30" required autofocus>
- </div>
-<div class="checkbox">
- <label><input type="checkbox" name="remember" required> Remember me</label>
- </div>
-  <button type="submit" class="btn btn-default">Login</button>
- </form>
- </div>
-
- <div id="registration-form" class="tab-pane fade">
- <form action="login.php" autocomplete="on" method="post">
-   <div class="form-group">
-  <label for="name">Your Name:</label>
-    <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" size="20" required autofocus>
- </div>
-   <div class="form-group">
-   <label for="newemail">Email:</label>
-   <input type="email" class="form-control" id="newemail" placeholder="Enter new email" name="newemail" size="50" required autofocus>
-  </div>
-  <div class="form-group">
-  <label for="newpwd">Password:</label>
-  <p id="psw" style="opacity: 0.5; display:none;">Must contain at least one number and one uppercase and lowercase letter, and at least 5 or more numbers</p>
-  <input type="password" class="form-control" id="newpwd" placeholder="New password" name="newpwd" size="30" onclick="psw()" required autofocus>
-   </div>
-   <button type="submit" class="btn btn-default">Register</button>
-   </form>
-  </div>
- </div>
-   </div>
-        <!--                                    <div class="modal-footer">-->
-        <!--                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
-        <!--                                    </div>-->
-                                        </div>
-                                    </div>
-                                </div>
-            </div>
-        </div></li>
+      <li class="nav-item">
+        <a class="nav-link" href="Apyq.html">PYQ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Apractice.html">PRACTICE</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="Aothers.html">OTHERS</a>
+    </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Sub1.html">BACK</a>
+      </li>    
+        
       </ul>
     </div>
 
 </nav>
 <strong style="margin-left:15%; font-size:26px">Unlimited-Quiz-Questions</strong>
-
+  
 
 
 <div id="mySidenav" class="sidenav">
@@ -114,14 +53,14 @@
     <a href="ReasoningQ.html" >Reasoning-Q</a> <br><br>
     <a href="GkQ.html" >GK-Q</a><br><br>
     <a href="EnglishQ.html">English-Q</a><br><br>
-
+    
 </div>
 
 
 
 <div style="border: 5px solid rgb(53, 14, 108);" class="cont">
 <img class="Redu" src="quiz.png" alt="products">
-
+     
     <div class="top-left"> Web Under Development...</div>
     </div>
 
@@ -135,7 +74,7 @@
     <p>(3)  Option</p>
     <p>(4)  Option</p>
     <p id="answer1"></p>
-    </div>
+    </div>  
 <h3>Q2. Choose Correct Option From The Following.</h3>
 <div id="Q2" onclick="Q2()" style="margin-left: 10px;cursor: pointer;">
 
@@ -144,7 +83,7 @@
 <p>(3)  Option</p>
 <p>(4)  Option</p>
 <p id="answer2"></p>
-</div>
+</div> 
 <h3>Q3. Choose Correct Option From The Following.</h3>
 <div id="Q3" onclick="Q3()" style="margin-left: 10px; cursor: pointer;">
 
@@ -153,7 +92,7 @@
   <p>(3)  Option</p>
   <p>(4)  Option</p>
   <p id="answer3"></p>
-  </div>
+  </div> 
   <h3>Q4. Choose Correct Option From The Following.</h3>
   <div id="Q4" onclick="Q4()" style="margin-left: 10px;cursor: pointer;">
 
@@ -162,7 +101,7 @@
     <p>(3)  Option</p>
     <p>(4)  Option</p>
     <p id="answer4"></p>
-    </div>
+    </div> 
     <h3>Q5. Choose Correct Option From The Following.</h3>
     <div id="Q5" onclick="Q5()" style="margin-left: 10px;cursor: pointer;">
 
@@ -171,7 +110,7 @@
       <p>(3)  Option</p>
       <p>(4)  Option</p>
       <p id="answer5"></p>
-      </div>
+      </div> 
       <h3>Q6. Choose Correct Option From The Following.</h3>
       <div id="Q6" onclick="Q6()" style="margin-left: 10px;cursor: pointer;">
 
@@ -180,7 +119,7 @@
         <p>(3)  Option</p>
         <p>(4)  Option</p>
         <p id="answer6"></p>
-        </div>
+        </div> 
         <h3>Q7. Choose Correct Option From The Following.</h3>
         <div id="Q7" onclick="Q7()" style="margin-left: 10px;cursor: pointer;">
 
@@ -189,7 +128,7 @@
           <p>(3)  Option</p>
           <p>(4)  Option</p>
           <p id="answer7"></p>
-          </div>
+          </div> 
           <h3>Q8. Choose Correct Option From The Following.</h3>
           <div id="Q8" onclick="Q8()" style="margin-left: 10px;cursor: pointer;">
 
@@ -208,7 +147,7 @@
               <p>(4)  Option</p>
               <p id="answer9"></p>
               </div>
-              <h3>Q10. Choose Correct Option From The Following.</h3>
+              <h3>Q10. Choose Correct Option From The Following.</h3>  
               <div id="Q10" onclick="Q10()" style="margin-left: 10px;cursor: pointer;">
 
                 <p>(1) Option</p>
@@ -216,7 +155,7 @@
                 <p>(3)  Option</p>
                 <p>(4)  Option</p>
                 <p id="answer10"></p>
-                </div>
+                </div> 
                 <button onclick="myReset()">Reset</button>
 
 
