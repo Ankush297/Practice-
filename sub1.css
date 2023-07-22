@@ -304,3 +304,8 @@ font-size: 3em;
 font-size: 3em;
 
 }
+
+/* DIRECTIONS*/
+#direction {
+margin: 5px;background-color: red;color: white;border-radius: 5px; border: 1px solid red; font-size: 14px;
+}
