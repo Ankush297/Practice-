@@ -15,8 +15,15 @@
   height:60px;
   font-size:30px;
  margin-top:0%;
-color: #154833;
-
+color: #ffffff;
+border-bottom: 5px solid white;
+border-right: 2px solid white;
+border-left: 2px solid white;
+border-top: 2px solid rgb(255, 255, 255);
+border-top-left-radius: 30px;
+border-top-right-radius: 6px;
+padding: 10px;
+background-color: rgb(70, 70, 255);
 
     }
     div.top {
@@ -46,6 +53,7 @@ height: 70px;
     .Redu{
     width:100%;
     max-height:300px;
+    
     }
     .cont {
     position: relative;
@@ -142,8 +150,6 @@ border:1px solid blue;
   background-color: rgb(0, 0, 0);
   color: white;
   text-align: center;
-  float: bottom;
-
 }
 
 /* Style the footer navigation bar */
@@ -322,7 +328,7 @@ height: 15%;
 @media only screen and (min-width: 600px) {
 .Redu {
 
-max-height:618px;
+max-height:470px;
 }
 #Strategy {
   max-height:1000px;
