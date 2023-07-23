@@ -11,20 +11,62 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script defer src="mainpage.js"></script>
   <link rel="stylesheet" href="sub1.css">
+  <style>
+    /* marquee div container */
+.marquee {
+    font-size: 2vw;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    height:7vw;
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+}
+@media only screen and (min-width: 600px) {
+.marquee{
+  height: 2.5vw;
+}
+
+}
+
+/* nested div inside the container */
+.marquee div {
+    display: block;
+    width: 200%;
+    position: absolute; 
+    overflow: hidden;
+    animation: marquee 12s linear infinite;
+}
+/* span with text */
+
+.marquee a {
+    float: left;
+    width: 50%;
+    font-size: 20px;
+    text-decoration: none;
+    color: red;
+}
+/* keyframe */
+@keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+}
+  </style>
+
 
 </head>
 <body>
 
   <center><strong>  <a href="index.html" style="text-decoration:none" class="first"> ✈️✈️✈️TOUCH THE SKY WITH GLORY✈️✈️✈️ </a></strong></center>
 
-  <nav style="border: 5px solid white;" class="navbar navbar-expand-xs bg-dark navbar-dark">
+  <nav style="border: 5px solid white;border-top-left-radius: 25px;border-top-right-radius: 10px;" class="navbar navbar-expand-xs bg-dark navbar-dark">
     <div class="container-fluid">
       <a style="border:1px solid white;padding: 5px;background-color: brown; "  class="navbar-brand" href="index.html">Real Education</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <button style="color: white;"  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
+        <ul  class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="Apyq.html">PYQ</a>
           </li>
@@ -69,15 +111,24 @@
 <div class="cont">
 <img class="Redu" src="image/AFCAT_redu.jpg" alt="products">
    
-  <div class="top-left"> Web Under Development...</div>
   </div>
-  <div style="  background-image: url(mainbackground.jpg);background-size: 100%;border-bottom:3.2px; width:100%;border-top: 3.2px solid #87CEEB;">
+  <div class="marquee">
+    <div>
+      <a href="#">WEBSITE IS UNDER DEVELOPMENT! </a>
+      <a href="#">WEBSITE IS UNDER DEVELOPMENT! </a>
+  
+
+
+      
+    </div>
+  </div>
+  <div style="  background-image: url(mainbackground.jpg);background-size: 100%;border-bottom:3.2px; width:100%;border-top:3.2px solid white">
     <img  id="plus"src="plus.png" alt="more" onclick="openNav()">
     <h1 style="margin-top:10px"><center> ABOUT AFCAT</center></h1>
     <p style="font-size: 20px;"><center>(Airforce Common Admission Test)</center></p>
     <div style="margin-left: 5px;">AFCAT (Air Force Common Admission Test) is an entrance examination conducted by the Indian Air Force (IAF) to select officers for various branches in the IAF, including Flying Branch, Ground Duty (Technical), and Ground Duty (Non-Technical) branches. The exam is conducted twice a year.</div>
     <br>
-
+  
     <div style="  background-image: url(mainbackground.jpg);background-size: 100%;border-bottom:3.2px; width:100%;border-top: 3.2px solid #87CEEB;">
 <div>
   <p style="border: 1px solid white; border-radius:15px; text-align: center;background-color: #87CEEB;padding: 10px;font-size: 24px;margin: 10px;">Follow This Strategy Ladder.</p>
