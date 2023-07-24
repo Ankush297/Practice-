@@ -71,7 +71,7 @@ height: 70px;
     .cont {
     position: relative;
     text-align:center;
-
+    background-image: url(mainbackground.jpg);
     top:0;
    
     }

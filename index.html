@@ -17,40 +17,24 @@
     font-size: 2vw;
     color: #fff;
     font-family: 'Courier New', Courier, monospace;
-    height:7vw;
+height: 50px;
     overflow: hidden;
-    background-color: #000;
+    background-color: #0b0216;
     position: relative;
+    width: 100%;
+    align-items: flex-end;
+    border-bottom: 2px solid white;
+    font-family: Volkhov, "Times New Roman", sans-serif;
+    font-style: italic;
 }
-@media only screen and (min-width: 600px) {
-.marquee{
-  height: 2.5vw;
+@media only screen and (max-width: 600px) {
+
+.marquee {
+font-size: 6vw;
 }
 
 }
 
-/* nested div inside the container */
-.marquee div {
-    display: block;
-    width: 200%;
-    position: absolute; 
-    overflow: hidden;
-    animation: marquee 12s linear infinite;
-}
-/* span with text */
-
-.marquee a {
-    float: left;
-    width: 50%;
-    font-size: 20px;
-    text-decoration: none;
-    color: red;
-}
-/* keyframe */
-@keyframes marquee {
-    0% { left: 0; }
-    100% { left: -100%; }
-}
   </style>
 
 
@@ -109,26 +93,19 @@
 
 
 <div class="cont">
+
 <img class="Redu" src="image/AFCAT_redu.jpg" alt="products">
-   
-  </div>
-  <div class="marquee">
-    <div>
-      <a href="#">WEBSITE IS UNDER DEVELOPMENT! </a>
-      <a href="#">WEBSITE IS UNDER DEVELOPMENT! </a>
-  
-
-
-      
-    </div>
-  </div>
-  <div style="  background-image: url(mainbackground.jpg);background-size: 100%;border-bottom:3.2px; width:100%;border-top:3.2px solid white">
+    <marquee class="marquee" width="60%" direction="left" height="100px">
+   Website Under Development! Content is free.<a href="#">[Click]</a>  
+      </marquee>
     <img  id="plus"src="plus.png" alt="more" onclick="openNav()">
     <h1 style="margin-top:10px"><center> ABOUT AFCAT</center></h1>
     <p style="font-size: 20px;"><center>(Airforce Common Admission Test)</center></p>
     <div style="margin-left: 5px;">AFCAT (Air Force Common Admission Test) is an entrance examination conducted by the Indian Air Force (IAF) to select officers for various branches in the IAF, including Flying Branch, Ground Duty (Technical), and Ground Duty (Non-Technical) branches. The exam is conducted twice a year.</div>
-    <br>
-  
+    </div>
+
+
+
     <div style="  background-image: url(mainbackground.jpg);background-size: 100%;border-bottom:3.2px; width:100%;border-top: 3.2px solid #87CEEB;">
 <div>
   <p style="border: 1px solid white; border-radius:15px; text-align: center;background-color: #87CEEB;padding: 10px;font-size: 24px;margin: 10px;">Follow This Strategy Ladder.</p>
